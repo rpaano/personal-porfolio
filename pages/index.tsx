@@ -4,8 +4,6 @@ import { services } from '../data'
 
 const index = ({services}: {services:any}) => {
 
-    console.log("CLIENT:", services)
-
     return (
         <div>
             <h1>
