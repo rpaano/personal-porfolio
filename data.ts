@@ -4,6 +4,7 @@ import { FaServer } from 'react-icons/fa'
 import { RiComputerLine } from 'react-icons/ri'
 import { Project, ServiceContract, SkillContract } from './ServicesContract'
 import { BsCircleFill } from 'react-icons/bs'
+import { type } from 'os'
 
 export const services:ServiceContract[] = [
     {
@@ -100,7 +101,8 @@ export const tools: SkillContract[] = [
 ];
 
 export const projects:Project[] = [
-    { 
+    {
+        id: 1,
         name: "COVID Tracker",
         description:
             "This app shows a statistical view about corona virus over the world",
@@ -111,6 +113,7 @@ export const projects:Project[] = [
         key_techs: ["React", "Chart.js", "Material UI"],
     },
     {
+        id: 2,
         name: "Algorithm Visualizer",
         image_path: "/images/algoVisual.png",
         deployed_url: "https://visual-algorithm.web.app/",
@@ -122,6 +125,7 @@ export const projects:Project[] = [
     },
 
     {
+        id: 3,
         name: "Dev Talks",
         image_path: "/images/dev.jpg",
         deployed_url: "https://dev-talks.herokuapp.com/",
@@ -140,6 +144,7 @@ export const projects:Project[] = [
         ],
     },
     {
+        id: 4,
         name: "Realtime Chat App",
         image_path: "/images/chatapp.jpg",
         deployed_url: "https://sumit-chat.netlify.app/",
@@ -150,6 +155,7 @@ export const projects:Project[] = [
         key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
     },
     {
+        id: 5,
         name: "Tweeter Clone",
         image_path: "/images/tweetme.jpg",
         deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
@@ -160,6 +166,7 @@ export const projects:Project[] = [
         key_techs: ["React", "Django", "Django REST API"],
     },
     {
+        id: 6,
         name: "Color Classification using tf.js",
         image_path: "/images/color.jpg",
         deployed_url: "!#",
@@ -170,6 +177,7 @@ export const projects:Project[] = [
         key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
     },
     {
+        id: 7,
         name: "YouTube using YouTube ",
         image_path: "/images/youtubeClone.png",
         deployed_url: "https://not-utube.web.app/",
@@ -187,6 +195,7 @@ export const projects:Project[] = [
         ],
     },
     {
+        id: 8,
         name: "Football App",
         image_path: "/images/football.png",
         deployed_url: "https://o-my-goal.web.app/",
