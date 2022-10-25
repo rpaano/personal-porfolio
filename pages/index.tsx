@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { GetServerSideProps, GetServerSidePropsContext } from 'next'
 import React from 'react'
 import { fadeInUp, routeAnimation, stagger } from '../animations'
 import ServiceCard from '../components/ServiceCard'
@@ -33,6 +34,12 @@ const index = () => {
     )
 }
 
-export default index
+// export const getServerSideProps: GetServerSideProps = async (
+//     context: GetServerSidePropsContext
+// ) => {
+//     const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
+//     const data = await res.json()    
+//     return { props: { endpoint: process.env.VERCEL_URL }}
+// }
 
-// {services}: {services:any}
+export default index
