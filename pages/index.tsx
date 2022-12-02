@@ -20,11 +20,13 @@ const index = () => {
                 <h6 className="my-3 text-xl font-bold tracking-wide">What I Offer</h6>
                 <motion.div className="grid gap-6 lg:grid-cols-2" variants={stagger} initial="initial" animate="animate">
                     {
-                        services.map((service) => 
-                            <motion.div 
+                        services.map((service) =>
+                            <motion.div
                                 variants={fadeInUp}
-                                className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1">
-                                <ServiceCard service={service}/>                         
+                                className="bg-gray-200 rounded-lg dark:bg-dark-200 lg:col-span-1"
+                                key={service.title}
+                                >
+                                <ServiceCard service={service}/>
                             </motion.div>
                         )
                     }
@@ -38,7 +40,7 @@ const index = () => {
 //     context: GetServerSidePropsContext
 // ) => {
 //     const res = await fetch(`${process.env.VERCEL_URL}/api/services`)
-//     const data = await res.json()    
+//     const data = await res.json()
 //     return { props: { endpoint: process.env.VERCEL_URL }}
 // }
 

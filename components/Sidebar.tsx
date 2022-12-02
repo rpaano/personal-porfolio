@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import profilePic from './profile/profilePic.jpg'
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 import { GiTie } from 'react-icons/gi'
@@ -17,7 +16,7 @@ const Sidebar = () => {
     return (
         <div>
             <Image
-                src="/image/profile/profilePic.jpg"
+                src="/images/profile/profilepic.jpg"
                 alt="avatar"
                 className="mx-auto border rounded-full "
                 height="128px"

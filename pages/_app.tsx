@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
                     <Navbar />
                     <AnimatePresence mode='wait'>
                         <Component {...pageProps} key={router.route}/>
-                    </AnimatePresence>    
+                    </AnimatePresence>
                 </div>
             </div>
         </ThemeProvider>
